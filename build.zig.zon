@@ -1,0 +1,21 @@
+.{
+    .name = "pango",
+    .version = "0.0.0",
+    .dependencies = .{
+        .fribidi = .{
+            .url = "git+https://github.com/fribidi/fribidi.git#cfc71cda065db859d8b4f1e3c6fe5da7ab02469a",
+            .hash = "1220e8c018d2f16d43f3138aea1c9133f741e576b1d71f12357676d29978254a42ba",
+        },
+        .glib = .{
+            .path = "../../ousttrue/glib",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        // For example...
+        //"LICENSE",
+        //"README.md",
+    },
+}
