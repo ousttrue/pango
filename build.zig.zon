@@ -6,8 +6,37 @@
             .url = "git+https://github.com/fribidi/fribidi.git#cfc71cda065db859d8b4f1e3c6fe5da7ab02469a",
             .hash = "1220e8c018d2f16d43f3138aea1c9133f741e576b1d71f12357676d29978254a42ba",
         },
+        .harfbuzz = .{
+            .url = "git+https://github.com/harfbuzz/harfbuzz.git#e451e91ec3608a2ebfec34d0c4f0b3d880e00e33",
+            .hash = "122040072b5490f9618657185918031e2c5e5b1898e2fccaa85842a24b4106ce0aa0",
+        },
+        .freetype = .{
+            .url = "git+https://gitlab.freedesktop.org/freetype/freetype.git#59320b2d3c2584ac01914ed0deff64bcc8fb23b2",
+            .hash = "1220ead98d12edac04318ea99082ba749f000b17b24fc59032abb21759081bd7391b",
+        },
+        .pixman = .{
+            .url = "https://www.cairographics.org/releases/pixman-0.43.4.tar.gz",
+            .hash = "1220d5bb63d355cc2ae11bf93947b2704f3654c10e7d487959854252a41293ed8b46",
+        },
+        .cairo = .{
+            .url = "https://www.cairographics.org/releases/cairo-1.18.2.tar.xz",
+            .hash = "12207aebdfe10995f6577324e43b629509358d35d520dc4c677e69de224a41d361e0",
+        },
+        .zlib = .{
+            .url = "http://zlib.net/fossils/zlib-1.3.1.tar.gz",
+            .hash = "1220c1854d7b4c2b5cbdd8ce6593c37e4bf1ac4032664735e1537c3848becb3b5834",
+        },
+        .fontconfig = .{
+            .url = "git+https://gitlab.freedesktop.org/fontconfig/fontconfig#cfef47622357564d804b99dbde2993ee221fa4c2",
+            .hash = "1220bd60179b426f4bc04593914cf40c04cabd596e518122f9853a2bf5496b099e2c",
+        },
+        .expat = .{
+            .url = "git+https://github.com/libexpat/libexpat.git#493406dbcc915c8209514241297fd2734a9e3a9b",
+            .hash = "1220d9f8c44cb66a2fdbbc4ce48b2f5280bc135d8aceca5afd900205804790d18444",
+        },
         .glib = .{
-            .path = "../../ousttrue/glib",
+            .url = "git+https://github.com/ousttrue/glib.git#f4aced018fd09a746b408a1d29de994f78109528",
+            .hash = "1220c9b95b790aefa754290d264d93a00ff3947661c33b1441d5e85e81a84ac0e068",
         },
     },
     .paths = .{

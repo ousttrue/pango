@@ -6,6 +6,8 @@
 /subprojects/pcre2.wrap
 /subprojects/pixman.wrap
 /subprojects/proxy-libintl.wrap
+/subprojects/expat.wrap
+/subprojects/gperf.wrap
 /subprojects/zlib.wrap
 
 builddir
@@ -14,3 +16,4 @@ Makefile
 zig-out
 .zig-cache
 
+pango-fonts.bmp

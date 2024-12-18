@@ -1,3 +1,10 @@
+# mod
+
+```sh
+-Dfontconfig=enabled
+-Dfreetype=enabled
+```
+
 Pango
 =====
 
