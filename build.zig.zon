@@ -35,16 +35,11 @@
             .hash = "1220d9f8c44cb66a2fdbbc4ce48b2f5280bc135d8aceca5afd900205804790d18444",
         },
         .glib = .{
-            .url = "git+https://github.com/ousttrue/glib.git#f4aced018fd09a746b408a1d29de994f78109528",
-            .hash = "1220c9b95b790aefa754290d264d93a00ff3947661c33b1441d5e85e81a84ac0e068",
+            .url = "git+https://github.com/ousttrue/glib.git#a13f4fd6eb939a749ada1ba737a67ee639b07e5b",
+            .hash = "1220449e2b4ac0edc303311c7feb737be24c1392029222a8dd17a53fc9df673e1a99",
         },
     },
     .paths = .{
-        "build.zig",
-        "build.zig.zon",
-        "src",
-        // For example...
-        //"LICENSE",
-        //"README.md",
+        "",
     },
 }

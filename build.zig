@@ -24,6 +24,7 @@ pub fn build(b: *std.Build) void {
     const gio = glib_dep.artifact("gio");
     const gmodule = glib_dep.artifact("gmodule");
     const harfbuzz = buildHarfbuzz(b, target, optimize);
+    b.installArtifact(harfbuzz);
     const freetype = buildFreetype(b, target, optimize);
     const fontconfig = buildFontconfig(b, target, optimize);
     fontconfig.linkLibrary(freetype);
@@ -31,6 +32,7 @@ pub fn build(b: *std.Build) void {
     fontconfig.linkLibrary(expat);
     const pixman = buildPixman(b, target, optimize);
     const cairo = buildCairo(b, target, optimize);
+    b.installArtifact(cairo);
     cairo.linkLibrary(pixman);
     cairo.linkLibrary(fontconfig);
     cairo.linkLibrary(freetype);
@@ -38,6 +40,7 @@ pub fn build(b: *std.Build) void {
     cairo.linkLibrary(zlib);
 
     const pango = buildPango(b, target, optimize);
+    b.installArtifact(pango);
     pango.linkLibrary(fribidi);
     pango.linkLibrary(glib);
     pango.addIncludePath(glib.getEmittedIncludeTree().path(b, "glib"));
@@ -125,6 +128,8 @@ fn buildPango(
         .flags = &flags,
     });
     lib.installHeadersDirectory(b.path("pango"), "pango", .{});
+    lib.installHeader(b.path("generated/pango/pango-features.h"), "pango/pango-features.h");
+    lib.installHeader(b.path("generated/pango/pango-enum-types.h"), "pango/pango-enum-types.h");
     lib.linkSystemLibrary("Dwrite");
 
     return lib;
